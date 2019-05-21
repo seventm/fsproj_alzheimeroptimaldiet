@@ -1,0 +1,17 @@
+Package: fsProjAlzOptimalDiet
+Type: Package
+Title: Fork Systems - project Alzheimer: the calculation of optimal diet.
+Version: 0.0.1.2
+Date: 2019-05-21
+Author: Konrad J. Debski
+Maintainer: Konrad J. Debski <debski@fork.edu.pl>
+Description: Fork Systems logger.
+License: Free to any use.
+Depends:
+  fsParams
+Imports:
+  snow,
+  mgcv
+Suggests:
+  testthat
+RoxygenNote: 6.1.1

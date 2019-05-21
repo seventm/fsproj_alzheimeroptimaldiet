@@ -1,0 +1,12 @@
+Package: fsParams
+Type: Package
+Title: Fork Systems fsParams
+Version: 0.0.0.1
+Date: 2019-05-12
+Author: Konrad J. Debski
+Maintainer: Konrad J. Debski <debski@fork.edu.pl>
+Description: Fork Systems logger.
+License: Free to any use.
+Suggests:
+  testthat
+RoxygenNote: 6.0.1
