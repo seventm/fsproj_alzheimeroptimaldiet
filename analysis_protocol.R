@@ -1,6 +1,8 @@
 # load packages
 library(fsProjAlzOptimalDiet)
-
+########
+#Global optimization procedure (Flow chart 2)
+########
 # load data from fsProjAlzOptimalDiet)
 data(usda_nutrients)
 
@@ -18,7 +20,9 @@ saveRDS(period_1, 'results_period_1.rds')
 saveRDS(period_2, 'results_period_2.rds')
 saveRDS(period_3, 'results_period_3.rds')
 saveRDS(period_4, 'results_period_4.rds')
-
+########
+#Procedure of calculation of optimal diet in regard to macronutrients proportions(Flow chart 3)
+########
 # calculate model params
 # Param config
 # carbs - from 300 to 600 by 5
