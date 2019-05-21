@@ -24,10 +24,10 @@ shifts <- prepareShifts(0:20)
 
 # Calculate model R square for each data shift for each period.
 # Model GAM used in analysis: R~carbs+prot+satu+mono+poly
-period_1 <- makeCalculations(x = usda_nutrients, period = 1, shifts = shifts, cores = 90)
-period_2 <- makeCalculations(x = usda_nutrients, period = 2, shifts = shifts, cores = 90)
-period_3 <- makeCalculations(x = usda_nutrients, period = 3, shifts = shifts, cores = 90)
-period_4 <- makeCalculations(x = usda_nutrients, period = 4, shifts = shifts, cores = 90)
+period_1 <- makeCalculations(x = usda_nutrients, period = 1, shifts = shifts, cores = 6)
+period_2 <- makeCalculations(x = usda_nutrients, period = 2, shifts = shifts, cores = 6)
+period_3 <- makeCalculations(x = usda_nutrients, period = 3, shifts = shifts, cores = 6)
+period_4 <- makeCalculations(x = usda_nutrients, period = 4, shifts = shifts, cores = 6)
 
 # save results
 saveRDS(period_1, 'results/results_period_1.rds')
