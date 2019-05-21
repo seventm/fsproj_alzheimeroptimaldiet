@@ -1,7 +1,9 @@
 # fsProj_AlzheimerOptimalDiet
 R code for analysis performed for paper: 
+
 *"Proportions of macronutrients including specific dietary fats in anti-Alzheimer’s and pro-longevity diet"*
-Marcin Studnicki, Konrad J. Dębski, Dariusz Stępkowski
+
+*Marcin Studnicki, Konrad J. Dębski, Dariusz Stępkowski*
 
 # Packages in repository
 Packages in */packages* directory:
