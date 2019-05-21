@@ -1,12 +1,11 @@
 # fsProj_AlzheimerOptimalDiet
-
 R code for analysis performed for paper: 
-&#34;Proportions of macronutrients including specific dietary fats in anti-
-Alzheimer’s and pro-longevity diet&#34;  
+*"Proportions of macronutrients including specific dietary fats in anti-Alzheimer’s and pro-longevity diet"*
 Marcin Studnicki, Konrad J. Dębski, Dariusz Stępkowski
 
 # Packages in repository
 Packages in */packages* directory:
+
 - **fsParams** - package to generate matrix with params combinations
 - **fsProjAlzOptimalDiet** - package with code used for analysis presented in the paper
 
