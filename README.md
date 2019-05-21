@@ -92,13 +92,13 @@ other attached packages:
 [1] fsProjAlzOptimalDiet_0.0.1.2 fsParams_0.0.0.1            
 
 loaded via a namespace (and not attached):
-[1] Matrix_1.2-3    snow_0.4-3      parallel_3.2.3  mgcv_1.8-11    
+[1] Matrix_1.2-3    snow_0.4-3      parallel_3.2.3  mgcv_1.8-27    
 [5] nlme_3.1-124    grid_3.2.3      lattice_0.20-33
 ```
 
 # Brief description:
 Calculations were performed with R version 3.2.3 using packages snow version 0.4-3, 
-mgcv version 1.8.11, nlme 3.1-124 and fsParams version 0.0.0.1 and fsProjAlzOptimalDiet version 0.0.1.2. 
+mgcv version 1.8-27, nlme 3.1-124 and fsParams version 0.0.0.1 and fsProjAlzOptimalDiet version 0.0.1.2. 
 Packages fsParams and fsProjAlzOptimalDiet designed by Fork Systems company for this analysis 
 are available in public repository
 (https://bitbucket.org/seventm/fsproj_alzheimeroptimaldiet).
