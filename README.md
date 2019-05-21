@@ -16,7 +16,9 @@ Packages in */packages* directory:
 ```
 # load required packages
 library(fsProjAlzOptimalDiet)
-
+########
+#Global optimization procedure (Flow chart 2)
+########
 # prepare data shifts
 shifts <- prepareShifts(0:20)
 # Precalculated shifts matrix used in paper is stored in the package and can be obtained with:
@@ -34,7 +36,9 @@ saveRDS(period_1, 'results/results_period_1.rds')
 saveRDS(period_2, 'results/results_period_2.rds')
 saveRDS(period_3, 'results/results_period_3.rds')
 saveRDS(period_4, 'results/results_period_4.rds')
-
+########
+#Procedure of calculation of optimal diet in regard to macronutrients proportions(Flow chart 3)
+########
 # Calculate model params matrix
 # Params configuration used in analysis are stored in package:
 # data(params_conf)
