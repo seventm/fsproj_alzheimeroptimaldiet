@@ -19,23 +19,25 @@ library(fsProjAlzOptimalDiet)
 ########
 #Global optimization procedure (Flow chart 2)
 ########
-# prepare data shifts
+# prepare data set for all five nutrients with availabilities taken with a shift from 0 to -20 years
 shifts <- prepareShifts(0:20)
 # Precalculated shifts matrix used in paper is stored in the package and can be obtained with:
 # data(shifts)
 
-# Calculate model R square for each data shift for each period.
+# Calculate Roptimal for each combinations of different sets of precedence periods for one period of life.
 # Model GAM used in analysis: R~carbs+prot+satu+mono+poly
 period_1 <- makeCalculations(x = usda_nutrients, period = 1, shifts = shifts, cores = 6)
 period_2 <- makeCalculations(x = usda_nutrients, period = 2, shifts = shifts, cores = 6)
 period_3 <- makeCalculations(x = usda_nutrients, period = 3, shifts = shifts, cores = 6)
 period_4 <- makeCalculations(x = usda_nutrients, period = 4, shifts = shifts, cores = 6)
 
-# save results
+# save results for Roptimal
 saveRDS(period_1, 'results/results_period_1.rds')
 saveRDS(period_2, 'results/results_period_2.rds')
 saveRDS(period_3, 'results/results_period_3.rds')
 saveRDS(period_4, 'results/results_period_4.rds')
+
+
 ########
 #Procedure of calculation of optimal diet in regard to macronutrients proportions(Flow chart 3)
 ########
