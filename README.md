@@ -31,7 +31,7 @@ period_2 <- makeCalculations(x = usda_nutrients, period = 2, shifts = shifts, co
 period_3 <- makeCalculations(x = usda_nutrients, period = 3, shifts = shifts, cores = 6)
 period_4 <- makeCalculations(x = usda_nutrients, period = 4, shifts = shifts, cores = 6)
 
-# save results for Roptimal
+# save results for Roptimal and GAM model parameters
 saveRDS(period_1, 'results/results_period_1.rds')
 saveRDS(period_2, 'results/results_period_2.rds')
 saveRDS(period_3, 'results/results_period_3.rds')
