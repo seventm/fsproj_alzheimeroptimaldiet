@@ -113,4 +113,4 @@ mgcv version 1.8-27, nlme 3.1-124 and fsParams version 0.0.0.1 and fsProjAlzOpti
 Packages fsParams and fsProjAlzOptimalDiet designed by Fork Systems company for this analysis 
 are available in public repository
 (https://bitbucket.org/seventm/fsproj_alzheimeroptimaldiet).
-Formula used for mgcv::gam() function is R~carbs+prot+satu+mono+poly.
+
