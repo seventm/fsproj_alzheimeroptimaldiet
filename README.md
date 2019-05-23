@@ -25,7 +25,7 @@ shifts <- prepareShifts(0:20)
 # data(shifts)
 
 # Calculate Roptimal for each combinations of different sets of precedence periods for one period of life.
-# Model GAM used in analysis: R~carbs+prot+satu+mono+poly
+# Model GAM used in analysis see fsProjAlzOptimalDiet/makeCalcultions.R
 period_1 <- makeCalculations(x = usda_nutrients, period = 1, shifts = shifts, cores = 6)
 period_2 <- makeCalculations(x = usda_nutrients, period = 2, shifts = shifts, cores = 6)
 period_3 <- makeCalculations(x = usda_nutrients, period = 3, shifts = shifts, cores = 6)
@@ -36,6 +36,7 @@ saveRDS(period_1, 'results/results_period_1.rds')
 saveRDS(period_2, 'results/results_period_2.rds')
 saveRDS(period_3, 'results/results_period_3.rds')
 saveRDS(period_4, 'results/results_period_4.rds')
+#chosen set of precedence periods based on maximum Roptimal criterion
 
 
 ########
