@@ -37,26 +37,28 @@ saveRDS(period_2, 'results/results_period_2.rds')
 saveRDS(period_3, 'results/results_period_3.rds')
 saveRDS(period_4, 'results/results_period_4.rds')
 #chosen set of precedence periods based on maximum Roptimal criterion
-
+#please see data(model_configuration)
 
 ########
 #Procedure of calculation of optimal diet in regard to macronutrients proportions(Flow chart 3)
 ########
-# Calculate model params matrix
-# Params configuration used in analysis are stored in package:
+# Calculate matrix of with varied availabilities of all 5 nutrients
+# Availabilities of nutriens configuration used in calculation of optimal diet are stored in:
 # data(params_conf)
-# configuration:
+# Used configuration:
 # carbs - from 300 to 600 by 5
 # prot  - from  50 to 250 by 5
 # satu  - from  10 to  80 by 2
 # mono  - from  10 to  80 by 2
 # poly  - from   2 to  50 by 2
 params <- generateParams(params_conf)
-# Precalculated params matrix used in paper is stored in the package and can be obtained with:
+# Precalculated varied availabilities of all 5 nutrients matrix used in our study is stored in the package and can be obtained with:
 # data(params)
 
-# Model values for each period used in paper are stored in the package and can be obtained with:
+# GAM model paprameters for each period used iin our study paper are stored in the package and can be obtained with:
 data(model_configuration)
+
+#Calculator equation for a given period of life 
 
 model.period.1 <- calculateParams(params.matrix = params,
                                   model.conf = model_configuration$period_1,
@@ -74,7 +76,7 @@ model.period.4 <- calculateParams(params.matrix = params,
                                   model.conf = model_configuration$period_4,
                                   range= c(-0.1, 0))
 								  
-# save results
+# save results (Rpredicted values, minimum energy difference) 
 saveRDS(model.period.1, 'model_period_1.rds')
 saveRDS(model.period.2, 'model_period_2.rds')
 saveRDS(model.period.3, 'model_period_3.rds')
