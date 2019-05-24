@@ -55,7 +55,7 @@ params <- generateParams(params_conf)
 # Precalculated varied availabilities of all 5 nutrients matrix used in our study is stored in the package and can be obtained with:
 # data(params)
 
-# GAM model paprameters for each period used iin our study paper are stored in the package and can be obtained with:
+# GAM model paprameters for each period used in our study paper are stored in the package and can be obtained with:
 data(model_configuration)
 
 #Calculator equation for a given period of life 
